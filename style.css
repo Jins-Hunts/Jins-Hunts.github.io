@@ -6,7 +6,7 @@ html {
   background-size: cover;
 }
 div {
-  width: 150px;
+  width: 200px;
 }
  
 h2 {
@@ -49,13 +49,15 @@ li a {
   z-index: 9999;
   width: 100%;
   height: 50px;
+  
 }
 .fixed-nav-bar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     width: 150px;
-	border: 1px solid #555
+	border-left:  2px solid #555;
+  border-top: 2px solid #555;
 }
 li a {
     display: block;
@@ -63,11 +65,15 @@ li a {
     padding: 8px 16px;
     text-decoration: none;
 }
-li a:hover {
+.fixed-nav-bar li a:hover {
 	background-color: #555;
 	color: white;
+}
+li a:hover{
+  background-color: #555;
+	color: white;
 
-	font-size: 30px;
+	font-size: 25px;
 
 	-webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
 	-moz-transition: font-size 0.3s ease, background-color 0.3s ease;
