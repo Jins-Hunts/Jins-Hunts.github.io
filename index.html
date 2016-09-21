@@ -10,7 +10,7 @@ html {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    margin-top: 12%; 
+    margin-top: 12%;
 }
 .center {
     margin: auto;
@@ -23,10 +23,25 @@ html {
 	background:none;
 }
 .cbg{
-	background-color: rgba(190, 200, 255, 0.66);
-	background: rgba(190, 200, 255, 0.6);
-}body{
+	background:-webkit-gradient(linear, 84% 51%, 0% 0%, from(#7E8284), to(#FFFFFF))
+}
+p,h1{
+text-shadow:11px 8px 5px #ffffff;
+}
+body{
 background-color:rgba(0,0,0,0) !important;
+}
+.transformed{
+transform: rotate(28deg) scale(1.42) skew(-1deg) translate(63px);
+-webkit-transform: rotate(28deg) scale(1.42) skew(-1deg) translate(63px);
+-moz-transform: rotate(28deg) scale(1.42) skew(-1deg) translate(63px);
+-o-transform: rotate(28deg) scale(1.42) skew(-1deg) translate(63px);
+-ms-transform: rotate(28deg) scale(1.42) skew(-1deg) translate(63px);
+}
+.box-shadow{
+-moz-box-shadow: 14px 14px 41px #000000;
+-webkit-box-shadow: 14px 14px 41px #000000;
+box-shadow: 14px 14px 41px #000000;
 }
 </style>
 <html lang="en">
@@ -66,7 +81,7 @@ background-color:rgba(0,0,0,0) !important;
 		</div>
 	</nav>
 	
-	<div class="container-fluid cbg" width=80%>
+	<div class="container-fluid cbg box-shadow" width=80%>
 		<div >
 		  <h1>Announcements</h1>
 		  <p>The webpage is currently under construction and will continuously be improved. Hail Khaleesi.</p> 
