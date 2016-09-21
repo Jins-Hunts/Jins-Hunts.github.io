@@ -5,11 +5,25 @@
 	font-family:Arial;
 }
 html { 
-  background: url(bg.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+	background: url('../bg.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin-top: 12%; 
+}
+.center {
+    margin: auto;
+    width: 50%;
+}
+.navbar {
+    margin-bottom: 0 !important;
+}
+.navbar-default{
+	background:none;
+}
+.cbg{
+	background-color: rgba(0, 0, 0, 0.15);
 }
 </style>
 <html lang="en">
@@ -22,98 +36,41 @@ html {
 	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
   
-  <body>
-	<nav class="navbar navbar-default">
-	  <div class="container-fluid">
-		<!-- Brand and toggle get grouped for better mobile display -->
-		<div class="navbar-header">
-		  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-			<span class="sr-only">Toggle navigation</span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-		  </button>
-		  <a class="navbar-brand" href="#">Brand</a>
+  <body >
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div>
+			<nav class="navbar navbar-inverse">
+			  <div>
+				<div class="navbar-header">
+				  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>
+				  <a class="navbar-brand" href="#">Jin's Hunts</a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+				  <ul class="nav navbar-nav">
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="https://housejin.wordpress.com/hunt/">Jin's Hunt webpage</a></li>
+					<li><a href="https://housejin.wordpress.com/hunt/#content-wrapper">Spawn Maps</a></li>
+					<li><a href="http://ffxiv.ariyala.com/HuntTracker/Leviathan">Hunt Tracker</a></li>
+				  </ul>
+				</div>
+			  </div>
+			</nav>
 		</div>
-
-	   <nav class="navbar navbar-inverse">
-	  <div class="container-fluid">
-		<div class="navbar-header">
-		  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-		  </button>
-		  <a class="navbar-brand" href="#">Jin's Hunts</a>
-		</div>
-		<div class="collapse navbar-collapse" id="myNavbar">
-		  <ul class="nav navbar-nav">
-			<li class="active"><a href="#">Home</a></li>
-			<li><a href="https://housejin.wordpress.com/hunt/">Jin's Hunt webpage</a></li>
-			<li><a href="https://housejin.wordpress.com/hunt/#content-wrapper">Spawn Maps</a></li>
-			<li><a href="http://ffxiv.ariyala.com/HuntTracker/Leviathan">Hunt Tracker</a></li>
-		  </ul>
-		</div>
-	  </div>
 	</nav>
-
-	<div class="container">
-	  <h1>Announcements</h1>
-	  <p>The webpage is currently under construction and will continuously be improved. Hail Khaleesi.</p> 
-	</div>
-		<div class="panel-group container" id="accordion">
-		  <div class="panel panel-default">
-			<div class="panel-heading">
-			  <h4 class="panel-title">
-				<a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
-				Sept.20th - Sept.27th</a>
-			  </h4>
-			</div>
-			<div id="collapse1" class="panel-collapse collapse in">
-			  <div class="panel-body">
-				<div class="list-group">
-					<a href="#" class=list-group-item active">First person - 1000</a>
-					<a href="#" class=list-group-item>Second person - 900</a>
-					<a href="#" class=list-group-item>Third - 800</a>
-					<a href="#" class=list-group-item>Fourth person - 700</a>
-					<a href="#" class=list-group-item>Fifth person - 600</a>
-				</div>
-			  </div>
-			</div>
-		  </div>
-		  <div class="panel panel-default">
-			<div class="panel-heading">
-			  <h4 class="panel-title">
-				<a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
-				Here for reference to what it will look like later</a>
-			  </h4>
-			</div>
-			<div id="collapse2" class="panel-collapse collapse">
-			  <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-			  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-			  minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-			  commodo consequat.</div>
-			</div>
-		  </div>
-		  <div class="panel panel-default">
-			<div class="panel-heading">
-			  <h4 class="panel-title">
-				<a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
-				Here for reference to what it will look like later</a>
-			  </h4>
-			</div>
-			<div id="collapse3" class="panel-collapse collapse">
-			  <div class="panel-body">
-				<div class="list-group">
-					<a href="#" class=list-group-item active">First person - 1000</a>
-					<a href="#" class=list-group-item>Second person - 900</a>
-					<a href="#" class=list-group-item>Third - 800</a>
-					<a href="#" class=list-group-item>Fourth person - 700</a>
-					<a href="#" class=list-group-item>Fifth person - 600</a>
-				</div>
-			  </div>
-			</div>
+	
+	<div class="container-fluid cbg" width=80%>
+		<div >
+		  <h1>Announcements</h1>
+		  <p>The webpage is currently under construction and will continuously be improved. Hail Khaleesi.</p> 
+		</div>
+		<div>
+			<iframe width=80% height=300px src="https://docs.google.com/spreadsheets/d/1_LjnuW9fIPKvK2m9YNq1WNOkJNj7wKcbgILQTDgKSAM/pubhtml?widget=true&amp;headers=false"></iframe>
 		</div>
 	</div>
+	
 </body>
 </html>
